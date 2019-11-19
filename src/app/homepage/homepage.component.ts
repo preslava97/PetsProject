@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomepageComponent implements OnInit {
 
+  showFiller: boolean;
+
+
   constructor() { }
 
   ngOnInit() {
   }
 
+
+  buttonClick(){
+    this.showFiller = !this.showFiller;
+  }
 }
+
+
+
+
