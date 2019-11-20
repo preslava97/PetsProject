@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDrawer } from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-homepage',
@@ -7,10 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomepageComponent implements OnInit {
 
-  showFiller: boolean;
+  showFiller: boolean = true;
 
 
-  constructor() { }
+  constructor() {   }
 
   ngOnInit() {
   }
