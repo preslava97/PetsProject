@@ -1,8 +1,21 @@
 
 <mat-drawer-container class="example-container" autosize>
   <mat-drawer #drawer class="example-sidenav" mode="side">
-    <p>Auto-resizing sidenav</p>
-    <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+    <!-- <p>Auto-resizing sidenav</p> -->
+    <!-- <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p> -->
+
+
+
+    <button (click)="showFiller = !showFiller" class="btn btn-success">
+      Домашни любимци >
+    </button>
+    <br *ngIf="showFiller">
+    <button *ngIf="showFiller" class="btn btn-warning">Кучета</button>
+    <br *ngIf="showFiller">
+    <button *ngIf="showFiller" class="btn btn-warning">Котки</button>
+    <br *ngIf="showFiller">
+    <button *ngIf="showFiller" class="btn btn-warning">Папагали</button>
+    <br>
     <button (click)="showFiller = !showFiller" class="btn btn-success">
       Toggle extra text
     </button>

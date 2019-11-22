@@ -8,7 +8,7 @@ import { MatDrawer } from '@angular/material/sidenav';
 })
 export class HomepageComponent implements OnInit {
 
-  showFiller: boolean = true;
+  showFiller: boolean = false;
 
 
   constructor() {   }
