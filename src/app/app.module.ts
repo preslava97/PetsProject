@@ -14,11 +14,6 @@ import { ContactsComponentComponent } from './contacts-component/contacts-compon
   declarations: [
     AppComponent,
     HomepageComponent,
-<<<<<<< HEAD
-=======
-    FAQComponentComponent,
-    ContactsComponentComponent
->>>>>>> b762f8f10d8701173c46f7dc0c59a1626d997f18
   ],
   imports: [
     BrowserModule,
