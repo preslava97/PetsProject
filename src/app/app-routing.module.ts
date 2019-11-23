@@ -4,6 +4,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { FAQComponent } from './faq/faq.component';
 import { AppComponent } from './app.component';
+import { PetsComponent } from './pets/pets.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,9 @@ const routes: Routes = [
   },
   {
     path: 'faq', component: FAQComponent
+  },
+  {
+    path: 'pets', component: PetsComponent
   }
 ];
 

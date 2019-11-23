@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { FAQComponent } from './faq/faq.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import { PetsComponent } from './pets/pets.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ContactsComponent } from './contacts/contacts.component';
     HomepageComponent,
     FAQComponent,
     ContactsComponent,
+    PetsComponent,
   ],
   imports: [
     BrowserModule,
