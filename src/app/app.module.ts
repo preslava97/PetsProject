@@ -10,9 +10,9 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import { FAQComponent } from './faq/faq.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { PetsComponent } from './pets/pets.component';
-import { LoginComponent } from './login/login.component';
 import { UserComponent } from './user/user.component';
 import { LogComponent } from './log/log.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,6 @@ import { LogComponent } from './log/log.component';
     FAQComponent,
     ContactsComponent,
     PetsComponent,
-    LoginComponent,
     UserComponent,
     LogComponent,
   ],
@@ -29,7 +28,8 @@ import { LogComponent } from './log/log.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatSidenavModule
+    MatSidenavModule,
+    FormsModule
   ],
   exports: [
     MatSidenavModule
