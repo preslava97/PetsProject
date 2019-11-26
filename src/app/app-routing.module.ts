@@ -5,6 +5,9 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { FAQComponent } from './faq/faq.component';
 import { AppComponent } from './app.component';
 import { PetsComponent } from './pets/pets.component';
+import { LoginComponent } from './login/login.component';
+import { UserComponent } from './user/user.component';
+import { LogComponent } from './log/log.component';
 
 const routes: Routes = [
   {
@@ -21,7 +24,16 @@ const routes: Routes = [
   },
   {
     path: 'pets', component: PetsComponent
-  }
+  },
+{
+  path: 'login', component: LoginComponent
+},
+{
+  path: 'user', component: UserComponent
+},
+{
+  path: 'log', component: LogComponent
+}
 ];
 
 @NgModule({

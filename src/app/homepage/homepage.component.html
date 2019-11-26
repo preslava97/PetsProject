@@ -13,6 +13,7 @@
     <br *ngIf="showFiller">
     <button *ngIf="showFiller" class="btn btn-warning">Папагали</button>
     <br>
+    
     <button (click)="showFiller = !showFiller" class="btn btn-success">
       Toggle extra text
     </button>
@@ -21,5 +22,6 @@
   <button type="button" class="btn btn-success" (click)="drawer.toggle()">
     . . .
   </button>
+  
 
 </mat-drawer-container>

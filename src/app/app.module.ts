@@ -10,6 +10,9 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import { FAQComponent } from './faq/faq.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { PetsComponent } from './pets/pets.component';
+import { LoginComponent } from './login/login.component';
+import { UserComponent } from './user/user.component';
+import { LogComponent } from './log/log.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +21,9 @@ import { PetsComponent } from './pets/pets.component';
     FAQComponent,
     ContactsComponent,
     PetsComponent,
+    LoginComponent,
+    UserComponent,
+    LogComponent,
   ],
   imports: [
     BrowserModule,
