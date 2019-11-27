@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-user',
@@ -7,8 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserComponent implements OnInit {
 
-  constructor() { }
+  log: string;
+  user: string;
+  
+  constructor(private router: Router) { }
 
+  login(): void{
+    if(this.log == 'admin' && this.user == 'admin'){
+      this.router.navigate("")
+    } else{
+      alert("Please, enter again");
+    }
+  }
   ngOnInit() {
   }
 
