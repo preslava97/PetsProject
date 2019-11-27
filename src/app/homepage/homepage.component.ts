@@ -14,16 +14,13 @@ export class HomepageComponent implements OnInit {
 
   constructor(private router: Router) {   }
 
-  ngOnInit() {
-    
-  }
+  ngOnInit() {}
 
-  openLogIn(): void{
-    (this.router.navigate(['log']))
+  openLogIn(): void {(this.router.navigate(['log']));
   }
 
 
-  buttonClick(){
+  buttonClick() {
     this.showFiller = !this.showFiller;
   }
 }
