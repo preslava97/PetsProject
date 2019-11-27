@@ -15,7 +15,7 @@ export class UserComponent implements OnInit {
 
   login(): void{
     if(this.log == 'admin' && this.user == 'admin'){
-      this.router.navigate("")
+      this.router.navigate(["homepage"]);
     } else{
       alert("Please, enter again");
     }
