@@ -12,7 +12,7 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { PetsComponent } from './pets/pets.component';
 import { UserComponent } from './user/user.component';
 import { LogComponent } from './log/log.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -29,7 +29,8 @@ import {FormsModule} from '@angular/forms';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSidenavModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [
     MatSidenavModule

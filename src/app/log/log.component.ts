@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-log',
@@ -7,20 +8,36 @@ import { Router } from '@angular/router';
   styleUrls: ['./log.component.scss']
 })
 export class LogComponent implements OnInit {
+  loginForm: FormGroup;
+  constructor(private router: Router, private formBuilder: FormBuilder) { }
 
-  constructor(private router: Router) { }
-  
-  username: string;
-  password: string;
-
-  ngOnInit() {
+  ngOnInit(): void {
+    this.loginForm = this.generateLoginForm();
   }
 
-  login() : void {
-    if(this.username == 'admin' && this.password == 'admin'){
-     this.router.navigate(["user"]);
-    }else {
-      alert("Invalid credentials");
+
+  onSignInButtonClicked(): void {
+    if(this.loginForm.valid) {
+
     }
+    else {
+      this.loginForm.markAllAsTouched()
+    }
+  }
+
+  onSignUpButtonClicked(): void {
+    // TODO: ...
+  }
+
+  private generateLoginForm(): FormGroup {
+    let usernameFormControl = this.formBuilder.control(null, [Validators.required]);
+
+    
+    let passwordFormControl = this.formBuilder.control(null, [Validators.required]);
+
+    return this.formBuilder.group({
+      username: usernameFormControl,
+      password: passwordFormControl
+    });
   }
 }
