@@ -13,6 +13,7 @@ import { PetsComponent } from './pets/pets.component';
 import { UserComponent } from './user/user.component';
 import { LogComponent } from './log/log.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { CatalogueComponent } from './catalogue/catalogue.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     PetsComponent,
     UserComponent,
     LogComponent,
+    CatalogueComponent,
   ],
   imports: [
     BrowserModule,
