@@ -1,0 +1,15 @@
+{
+  "offers": [
+    {
+      "id": 1,
+      "petId": 1,
+      "name": 2,
+      "breed": "Немска овчарка",
+      "age": 10,
+      "gender": "М",
+      "price": 320,
+      "img": "/src/images/mid-dogs/1.jpg",
+      "description": "Мъжка немска овчарка на 10 месеца."
+    }
+  ]
+}

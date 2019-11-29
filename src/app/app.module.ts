@@ -17,6 +17,7 @@ import { CatalogueComponent } from './catalogue/catalogue.component';
 import {SlideshowModule} from 'ng-simple-slideshow';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +36,7 @@ import {SlideshowModule} from 'ng-simple-slideshow';
     MatSidenavModule,
     FormsModule,
     ReactiveFormsModule,
-    SlideshowModule
+    SlideshowModule,
   ],
   exports: [
     MatSidenavModule
