@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { PetsComponent } from './pets/pets.component';
 import { UserComponent } from './user/user.component';
 import { LogComponent } from './log/log.component';
+import { CatalogueComponent } from './catalogue/catalogue.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,9 @@ const routes: Routes = [
   },
   {
     path: 'user', component: UserComponent
+  },
+  {
+    path: 'catalogue', component: CatalogueComponent
   },
   {
     path: 'log', component: LogComponent
