@@ -14,6 +14,8 @@ import { UserComponent } from './user/user.component';
 import { LogComponent } from './log/log.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { CatalogueComponent } from './catalogue/catalogue.component';
+import {SlideshowModule} from 'ng-simple-slideshow';
+
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import { CatalogueComponent } from './catalogue/catalogue.component';
     BrowserAnimationsModule,
     MatSidenavModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SlideshowModule
   ],
   exports: [
     MatSidenavModule

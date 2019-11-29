@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDrawer } from '@angular/material/sidenav';
 import { Router } from '@angular/router';
+import {SlideshowModule} from 'ng-simple-slideshow';
 
 @Component({
   selector: 'app-homepage',
