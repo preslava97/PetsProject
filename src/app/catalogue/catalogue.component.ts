@@ -8,19 +8,16 @@ import { Router } from '@angular/router';
 })
 export class CatalogueComponent implements OnInit {
 
-  // showFiller: boolean = false;
-
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
   
-
-  // openCatalogue() :void {
-  //   (this.router.navigate(['pets/catalogue']));
-  // }
-
-  // buttonClick() {
-  //   this.showFiller = !this.showFiller;
-  // }
+  open(item: string){
+    if(item==="food"){
+      this.router.navigate(['catalogue/food']);
+    } else if(item==="accessories"){
+      this.router.navigate(['catalogue/accessories']);
+    }
+  }
 }

@@ -13,7 +13,7 @@ export class PetsComponent implements OnInit {
   ngOnInit() {
   }
 
-  gothere(pet: string): void {
+  goToPet(pet: string): void {
     switch (pet) {
       case "dog": {
         this.router.navigate(['pets/dog']);
