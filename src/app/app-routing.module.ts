@@ -8,6 +8,9 @@ import { PetsComponent } from './pets/pets.component';
 import { UserComponent } from './user/user.component';
 import { LogComponent } from './log/log.component';
 import { CatalogueComponent } from './catalogue/catalogue.component';
+import { DogComponent } from './pets/dog/dog.component';
+import { ParrotComponent } from './pets/parrot/parrot.component';
+import { CatComponent } from './pets/cat/cat.component';
 
 const routes: Routes = [
   {
@@ -24,6 +27,15 @@ const routes: Routes = [
   },
   {
     path: 'pets', component: PetsComponent
+  },
+  {
+    path: 'pets/dog', component: DogComponent
+  },
+  {
+    path: 'pets/cat', component: CatComponent
+  },
+  {
+    path: 'pets/parrot', component: ParrotComponent
   },
   {
     path: 'user', component: UserComponent

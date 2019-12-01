@@ -15,6 +15,9 @@ import { LogComponent } from './log/log.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { CatalogueComponent } from './catalogue/catalogue.component';
 import {SlideshowModule} from 'ng-simple-slideshow';
+import { DogComponent } from './pets/dog/dog.component';
+import { CatComponent } from './pets/cat/cat.component';
+import { ParrotComponent } from './pets/parrot/parrot.component';
 
 
 
@@ -28,6 +31,9 @@ import {SlideshowModule} from 'ng-simple-slideshow';
     UserComponent,
     LogComponent,
     CatalogueComponent,
+    DogComponent,
+    CatComponent,
+    ParrotComponent,
   ],
   imports: [
     BrowserModule,
