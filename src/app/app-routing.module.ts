@@ -11,6 +11,9 @@ import { CatalogueComponent } from './catalogue/catalogue.component';
 import { DogComponent } from './pets/dog/dog.component';
 import { ParrotComponent } from './pets/parrot/parrot.component';
 import { CatComponent } from './pets/cat/cat.component';
+import { AccessoriesComponent } from './catalogue/accessories/accessories.component';
+import { FormBuilder } from '@angular/forms';
+import { FoodComponent } from './catalogue/food/food.component';
 
 const routes: Routes = [
   {
@@ -36,6 +39,12 @@ const routes: Routes = [
   },
   {
     path: 'pets/parrot', component: ParrotComponent
+  },
+  {
+    path: 'catalogue/accessories', component: AccessoriesComponent
+  },
+  {
+    path: 'catalogue/food', component: FoodComponent
   },
   {
     path: 'user', component: UserComponent
