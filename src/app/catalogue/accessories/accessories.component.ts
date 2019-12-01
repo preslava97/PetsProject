@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./accessories.component.scss']
 })
 export class AccessoriesComponent implements OnInit {
+  showShortDesciption = true;
+
+ alterDescriptionText() {
+    this.showShortDesciption = !this.showShortDesciption;
+ }
 
   constructor() { }
 
