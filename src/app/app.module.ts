@@ -20,12 +20,9 @@ import { CatComponent } from './pets/cat/cat.component';
 import { ParrotComponent } from './pets/parrot/parrot.component';
 import { FoodComponent } from './catalogue/food/food.component';
 import { AccessoriesComponent } from './catalogue/accessories/accessories.component';
-<<<<<<< HEAD
 import { HttpClientModule } from '@angular/common/http';
 import { PetsService } from './services/http-services/pets-service/pets.service';
-=======
 import { ContactsService } from './services/http-services/contact-service/contact.service';
->>>>>>> 73505a21525a79ef139b6fc8ea606979e2a978dd
 
 
 
