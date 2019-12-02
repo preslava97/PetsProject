@@ -1,1 +1,315 @@
-<p>food works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <div class="card mb-3">
+        <h3 class="card-header">Сухa храна за кучета</h3>
+        <div class="card-body">
+          <h5 class="card-title">Налично</h5>
+          <h6 class="card-subtitle text-muted">Гранули</h6>
+        </div>
+        <img style="height: 200px; width: 100%; display: block;" src="../../../images/Dog_Food.jpg" alt="Card image">
+        <div class="card-body">
+          <p class="card-text">
+            <div [ngClass]="{'show-less': showShortDesciption}">Сред нашия богат асортимент на суха храна за кучета със
+              сигурност ще намерите подходящата храна и за Вашия любимец.
+              Съобразете я с индивидуалните потребности на кучето.
+              Сухата храна предоставя важни за организма на кучета хранителни вещества и добавки и е неизменна част от
+              менюто на
+              кучетата .Тук ще намерите суха храна от всички най-известни производители, като Royal Canin, Eukanuba,
+              Applaws,Proplan, Taste of
+              the wild и много други марки храни на изгодни цени и на промоция.За запитване или поръчки,изберете линка
+              под описанието.
+            </div>
+            <p class="row">
+              <a class="myButton" id="myBtn" (click)="alterDescriptionText()">Прочети повече
+              </a>
+              <p class="row"> Цена: 10 лв за кг. </p>
+        </div>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="card mb-3">
+        <h3 class="card-header">Консервирана храна</h3>
+        <div class="card-body">
+          <h5 class="card-title">Налично </h5>
+          <h6 class="card-subtitle text-muted">Желе</h6>
+        </div>
+        <img style="height: 200px; width: 100%; display: block;" src="../../../images/DogWetfood.jpg" alt="Card image">
+        <div class="card-body">
+          <p class="card-text">
+            <div [ngClass]="{'show-less': showShortDesciption}">Тук ще намерите богат избор на консервирана храна за
+              Вашето куче, от различни производители и с различни дозировки.
+              Особено предпочитани са например Hill's, Rinti и Rocco!
+              За запитване или поръчки,изберете линка под описанието.
+            </div>
+            <p class="row">
+              <a class="myButton" (click)="alterDescriptionText()">Прочети повече</a>
+              <p class="row"> Цена: 7 лв </p>
+        </div>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="card mb-3">
+        <h3 class="card-header">Лакомства и деликатеси за кучета</h3>
+        <div class="card-body">
+          <h5 class="card-title">Налично</h5>
+          <h6 class="card-subtitle text-muted">Dentastix,Pedigree....</h6>
+        </div>
+        <img style="height: 200px; width: 100%; display: block;" src="../../../images/Dog_Treats_Bones_.jpg"
+          alt="Card image">
+        <div class="card-body">
+          <p class="card-text">
+            <div [ngClass]="{'show-less': showShortDesciption}">
+              Лакомствата за дъвчене са перфектна добавка към нормалната кучешка храна. Могат да бъдат използвани като
+              награда, за
+              забавление или за ежедневна поддръжка на зъбите. Дали кокал за дъвчене или цял сладкиш, с лакомствата
+              гарантирано ще
+              зарадвате Вашия любимец.За запитване или поръчки,изберете линка под описанието.</div>
+            <p class="row">
+              <a class="myButton" (click)="alterDescriptionText()">Прочети повече</a>
+              <p class="row"> Цена: 6 лв </p>
+        </div>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="card mb-3">
+        <h3 class="card-header">Снаксове и крекери за папагали</h3>
+        <div class="card-body">
+          <h5 class="card-title">Налично</h5>
+          <h6 class="card-subtitle text-muted">Семки,снакс,крекери</h6>
+        </div>
+        <img style="height: 200px; width: 100%; display: block;"
+          src="../../../images/vitakraft_kraecker_wellensittich_.jpg" alt="Card image">
+        <div class="card-body">
+          <p class="card-text">
+            <div [ngClass]="{'show-less': showShortDesciption}">
+              Твърдо изпечените крекери се окачват удобно във вътрешността на клетката и подсигуряват дълго занимание на
+              Вашата птица.
+              Те могат да се използват като награда, за занимание или като целесъобразна добавка към ежедневната храна.
+              Тук ще
+              намерите богат избор от различни снаксове и крекери, с които от време на време да разнообразявате менюто
+              на Вашата
+              птица.За запитване или поръчка,изберете линка под описанието.
+            </div>
+            <p class="row">
+              <a class="myButton" (click)="alterDescriptionText()">Прочети повече</a>
+            </p>
+            <p class="row"> Цена: 4 лв </p>
+        </div>
+      </div>
+      <div class="card-body">
+        <a href="#" class="card-link">Card link</a>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="card mb-3">
+        <h3 class="card-header">Храна за птици</h3>
+        <div class="card-body">
+          <h5 class="card-title">Налично</h5>
+          <h6 class="card-subtitle text-muted">Вълнисти,дългоопашати,канарчета</h6>
+        </div>
+        <img style="height: 200px; width: 100%; display: block;" src="../../../images/Bird_food.jpg" alt="Card image">
+        <div class="card-body">
+          <p class="card-text">
+            <div [ngClass]="{'show-less': showShortDesciption}">
+              Подходящата и съобразена с видовите особености храна е в основата на правилното отглеждане на Вашата
+              птица. Тук ще
+              намерите богат избор на храна за Вашия пернат приятел от различни производители. Независимо дали папагали,
+              вълнисти
+              папагалчета или канарчета, с нас никой не остава гладен.За запитване или поръчка,изберете линка под
+              описанието.
+            </div>
+            <p class="row">
+              <a class="myButton" (click)="alterDescriptionText()">Прочети повече</a>
+            </p>
+            <p class="row"> Цена: 13 лв </p>
+        </div>
+      </div>
+      <div class="card-body">
+        <a href="#" class="card-link">Card link</a>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="card mb-3">
+        <h3 class="card-header">Суха храна за котки</h3>
+        <div class="card-body">
+          <h5 class="card-title">Налично</h5>
+          <h6 class="card-subtitle text-muted">Гранули</h6>
+        </div>
+        <img style="height: 200px; width: 100%; display: block;" src="../../../images/Cat_Dryfood_.jpg"
+          alt="Card image">
+        <div class="card-body">
+          <p class="card-text">
+            <div [ngClass]="{'show-less': showShortDesciption}">
+              При нас ще намерите повече от 30 марки суха храна за котки. Подберете храната според потребностите на
+              Вашата котка:
+              възраст, порода, котка, отглеждана в дома Ви или свободно на двора - в Дай Лапа има подходяща храна за
+              Вашия любимец.
+              Предлагаме една от най-добрите храни за котки Whiskas с,която Вашата котка ще остане доволна и ще ви мол
+              за още.
+              За запитване или поръчка,изберете линка под описанието.
+            </div>
+            <p class="row">
+              <a class="myButton" (click)="alterDescriptionText()">Прочети повече</a>
+            </p>
+            <p class="row"> Цена: 12 лв за кг. </p>
+        </div>
+      </div>
+      <div class="card-body">
+        <a href="#" class="card-link">Card link</a>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="card mb-3">
+        <h3 class="card-header">Консервирана храна за котки</h3>
+        <div class="card-body">
+          <h5 class="card-title">Налично</h5>
+          <h6 class="card-subtitle text-muted">Желе</h6>
+        </div>
+        <img style="height: 200px; width: 100%; display: block;" src="../../../images/CatWetfood_.jpg" alt="Card image">
+        <div class="card-body">
+          <p class="card-text">
+            <div [ngClass]="{'show-less': showShortDesciption}">
+              В нашия разнообразен асортимент от консервирани котешки храни със сигурност ще откриете подходящото и за
+              Вашата котка.
+              Съобразете изцяло избора си с потребностите на Вашата домашна любимка. При нас Вие можете да избирате
+              между храни от над
+              25 водещи производители.
+              За запитване или поръчка,изберете линка под описанието.
+            </div>
+            <p class="row">
+              <a class="myButton" (click)="alterDescriptionText()">Прочети повече</a>
+            </p>
+            <p class="row"> Цена: 10 лв </p>
+        </div>
+      </div>
+      <div class="card-body">
+        <a href="#" class="card-link">Card link</a>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="card mb-3">
+        <h3 class="card-header">Лакомства за котки</h3>
+        <div class="card-body">
+          <h5 class="card-title">Налично</h5>
+          <h6 class="card-subtitle text-muted">Бонбони,Пасти,Пръчици</h6>
+        </div>
+        <img style="height: 200px; width: 100%; display: block;" src="../../../images/CatSnacks_.jpg" alt="Card image">
+        <div class="card-body">
+          <p class="card-text">
+            <div [ngClass]="{'show-less': showShortDesciption}">
+              Лакомствата за котки, под формата на дропс (бонбони), пасти или пръчици и други, разнообразяват приятно
+              ежедневното меню
+              на всяка котка. Тези вкусотии могат да се дават като поощрение и награда, за занимание или целенасочено
+              като добавка към
+              ежедневната храна на котката. Всички лакомства за котки може да се поръчат сега на изгодна цена.
+              За запитване или поръчка,изберете линка под описанието.
+            </div>
+            <p class="row">
+              <a class="myButton" (click)="alterDescriptionText()">Прочети повече</a>
+            </p>
+            <p class="row"> Цена: 6 лв </p>
+        </div>
+      </div>
+      <div class="card-body">
+        <a href="#" class="card-link">Card link</a>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="card mb-3">
+        <h3 class="card-header">Диетична храна и хранителни добавки за котки</h3>
+        <div class="card-body">
+          <h5 class="card-title">Налично</h5>
+          <h6 class="card-subtitle text-muted">Гранули и смес..</h6>
+        </div>
+        <img style="height: 200px; width: 100%; display: block;"
+          src="../../../images/CatFoodSupplementsAndCatSpecialDietFood_.jpg" alt="Card image">
+        <div class="card-body">
+          <p class="card-text">
+            <div [ngClass]="{'show-less': showShortDesciption}">
+              Котките се нуждаят от балансирана храна, която да покрива нуждите им от витамини и хранителни вещества.
+              Понякога
+              стандартната котешка храна не е достатъчна за целта. В такива случаи допълващите продукти помагат за
+              задоволяването на
+              потребностите.
+              За запитване или поръчка,изберете линка под описанието.
+            </div>
+            <p class="row">
+              <a class="myButton" (click)="alterDescriptionText()">Прочети повече</a>
+            </p>
+            <p class="row"> Цена: 26 лв </p>
+        </div>
+      </div>
+      <div class="card-body">
+        <a href="#" class="card-link">Card link</a>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="card mb-3">
+        <h3 class="card-header">Хранителни добавки за папагали</h3>
+        <div class="card-body">
+          <h5 class="card-title">Налично</h5>
+          <h6 class="card-subtitle text-muted">Добавки,Витамини</h6>
+        </div>
+        <img style="height: 200px; width: 100%; display: block;" src="../../../images/FoodSuppliments_.jpg"
+          alt="Card image">
+        <div class="card-body">
+          <p class="card-text">
+            <div [ngClass]="{'show-less': showShortDesciption}">
+              За да покриват нуждата си от витамини и хранителни вещества, птиците също се нуждаят от балансиран начин
+              на хранене.
+              Успоредно с храната за птици съществуват и специални допълващи продукти. Те задоволяват потребностите на
+              птиците от
+              витамини, минерални вещества и микроелементи.
+              За запитване или поръчка,изберете линка под описанието.
+            </div>
+            <p class="row">
+              <a class="myButton" (click)="alterDescriptionText()">Прочети повече</a>
+            </p>
+            <p class="row"> Цена: 15 лв </p>
+        </div>
+      </div>
+      <div class="card-body">
+        <a href="#" class="card-link">Card link</a>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="card mb-3">
+        <h3 class="card-header"> Хранителни добавки за кучета</h3>
+        <div class="card-body">
+          <h5 class="card-title">Налично</h5>
+          <h6 class="card-subtitle text-muted">Диетична храна стимулираща организмът и други</h6>
+        </div>
+        <img style="height: 200px; width: 100%; display: block;"
+          src="../../../images/DogSupplementsAndSpecialDietFood_.jpg" alt="Card image">
+        <div class="card-body">
+          <p class="card-text">
+            <div [ngClass]="{'show-less': showShortDesciption}">
+              За да задоволят потребностите си от витамини и хранителни вещества, четириногите ни приятели се нуждаят от
+              балансиран
+              хранителен режим. Обикновено стандартната кучешка храна не е достатъчна за целта. Като допълнение към
+              ежедневната
+              порция, хранителните добавки ефективно компенсират липсващите хранителни вещества.
+              За запитване или поръчка,изберете линка под описанието.
+            </div>
+            <p class="row">
+              <a class="myButton" (click)="alterDescriptionText()">Прочети повече</a>
+            </p>
+            <p class="row"> Цена: 28 лв </p>
+        </div>
+      </div>
+      <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+        </div>
+    </div>
+  </div>
+</div>
