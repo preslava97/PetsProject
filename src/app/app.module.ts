@@ -20,6 +20,8 @@ import { CatComponent } from './pets/cat/cat.component';
 import { ParrotComponent } from './pets/parrot/parrot.component';
 import { FoodComponent } from './catalogue/food/food.component';
 import { AccessoriesComponent } from './catalogue/accessories/accessories.component';
+import { HttpClientModule } from '@angular/common/http';
+import { PetsService } from './services/http-services/pets-service/pets.service';
 
 
 
@@ -47,11 +49,14 @@ import { AccessoriesComponent } from './catalogue/accessories/accessories.compon
     FormsModule,
     ReactiveFormsModule,
     SlideshowModule,
+    HttpClientModule
   ],
   exports: [
     MatSidenavModule
   ],
-  providers: [],
+  providers: [
+    PetsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
