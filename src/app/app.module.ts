@@ -56,11 +56,8 @@ import { ContactsService } from './services/http-services/contact-service/contac
     MatSidenavModule
   ],
   providers: [
-<<<<<<< HEAD
-    PetsService
-=======
+    PetsService,
     ContactsService
->>>>>>> 73505a21525a79ef139b6fc8ea606979e2a978dd
   ],
   bootstrap: [AppComponent]
 })
