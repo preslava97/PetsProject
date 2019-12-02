@@ -20,6 +20,7 @@ import { CatComponent } from './pets/cat/cat.component';
 import { ParrotComponent } from './pets/parrot/parrot.component';
 import { FoodComponent } from './catalogue/food/food.component';
 import { AccessoriesComponent } from './catalogue/accessories/accessories.component';
+import { ContactsService } from './services/http-services/contact-service/contact.service';
 
 
 
@@ -51,7 +52,9 @@ import { AccessoriesComponent } from './catalogue/accessories/accessories.compon
   exports: [
     MatSidenavModule
   ],
-  providers: [],
+  providers: [
+    ContactsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
