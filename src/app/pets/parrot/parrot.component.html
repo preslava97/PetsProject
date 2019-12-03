@@ -1,1 +1,81 @@
-<p>parrot works!</p>
+<div class="container">
+    <button type="button" class="btn btn-outline-success" (click)="goBack()">Назад</button>
+
+    <div class="row">
+        <div class="col-sm">
+            <div class="card mb-3">
+                <h3 class="card-header">Кики</h3>
+                <div class="card-body">
+                    <h5 class="card-title"> Вълнист папагал</h5>
+                    <h6 class="card-subtitle text-muted">Възраст: 4 месеца</h6>
+                </div>
+                <img style="height: 200px; width: 100%; display: block;" src="../../../images/vylnisto-papagalche-1.jpg"
+                    alt="Card image">
+                <div class="card-body">
+                    <input type="checkbox" class="read-more-state" id="post-1" />
+                    <p class="read-more-wrap">
+                      Здравейте аз съм Кики.
+                      Може да съм малка на размер, но съм с голяма душа,която искам да я дам изцяло на стопанинът си.<span class="read-more-target">
+                      Обичам да летя в големият си кафез и да се наслаждавам на люлката си и да си пея цял ден,също искам и да се науча да говоря.
+                      Ако искаш да се запознаем се отправи към,Попитай за мен!
+                        </span>
+                    </p>
+                    <label for="post-1" class="read-more-trigger"></label>
+                </div>
+                <div class="card-body">
+                    <button type="button" class="btn btn-warning" (click)="askAboutMe()">Попитай за мен!</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="card mb-3">
+                <h3 class="card-header">Майки</h3>
+                <div class="card-body">
+                    <h5 class="card-title">Жако</h5>
+                    <h6 class="card-subtitle text-muted">Възраст: 2 години</h6>
+                </div>
+                <img style="height: 200px; width: 100%; display: block;" src="../../../images/Jako.jpg"
+                    alt="Card image">
+                <div class="card-body">
+                    <input type="checkbox" class="read-more-state" id="post-2" />
+                    <p class="read-more-wrap">
+                      Здравейте казвам се Майки!
+                      Вече съм,голям и мога да говоря интелегентно с хората и да имитирам животни.
+                      <span class="read-more-target">
+                      Обичам да летя,да се кътеря и да кълва  минерален камък,а най-много обичам снакс!
+                      Ако искаш да се запознаем се отправи към,Попитай за мен!
+                        </span>
+                    </p>
+                    <label for="post-2" class="read-more-trigger"></label>
+                </div>
+                <div class="card-body">
+                    <button type="button" class="btn btn-warning" (click)="askAboutMe()">Попитай за мен!</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="card mb-3">
+                <h3 class="card-header">Джаро</h3>
+                <div class="card-body">
+                    <h5 class="card-title">Какаду</h5>
+                    <h6 class="card-subtitle text-muted">Възраст: 1 година и 5 месеца</h6>
+                </div>
+                <img style="height: 200px; width: 100%; display: block;" src="../../../images/Djuli_Yorki.jpg"
+                    alt="Card image">
+                <div class="card-body">
+                    <input type="checkbox" class="read-more-state" id="post-3" />
+                    <p class="read-more-wrap">
+                      Здравейте казвам се Джаро!
+                      Много съм добър и изпълнителен,умея да рецитирам забавни фрази и да бъда "закачлив" с хората.<span class="read-more-target">
+                      Обичам и да се кътеря по-екстремни условия и да наблюдавам от високо.
+                        </span>
+                    </p>
+                    <label for="post-3" class="read-more-trigger"></label>
+                </div>
+                <div class="card-body">
+                    <button type="button" class="btn btn-warning" (click)="askAboutMe()">Попитай за мен!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

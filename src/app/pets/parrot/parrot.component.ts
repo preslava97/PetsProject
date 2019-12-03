@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-parrot',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ParrotComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
+  goBack(): void {
+    this.router.navigate(['pets']);
+  }
 
+  askAboutMe(): void {
+    this.router.navigate(['contacts']);
+  }
 }

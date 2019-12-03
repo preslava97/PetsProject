@@ -13,11 +13,11 @@ export class DogComponent implements OnInit {
   ngOnInit() {
   }
 
-  goBack(): void{
+  goBack(): void {
     this.router.navigate(['pets']);
   }
 
-  askAboutMe(): void{
+  askAboutMe(): void {
     this.router.navigate(['contacts']);
   }
 
