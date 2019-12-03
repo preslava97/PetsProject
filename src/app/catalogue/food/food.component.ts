@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-food',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./food.component.scss']
 })
 export class FoodComponent implements OnInit {
-  
-  constructor() { }
+  constructor(private router: Router) { }
+
 
   ngOnInit() {
   }
+    goBack(): void {
+      this.router.navigate(['catalogue']);
+    }
 
-}
+  }
+
+
