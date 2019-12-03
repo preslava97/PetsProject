@@ -1,17 +1,177 @@
 <div class="container">
-    <div *ngIf="pets$ | async as pets; else loading">
-        <div *ngFor="let pet of pets" class="card">
-            <div class="card-body">
-                <h5 class="card-title">{{pet.description}}</h5>
+    <button type="button" class="btn btn-outline-success" (click)="goBack()">Назад</button>
+    <div class="row">
+        <div class="col-sm">
+            <div class="card mb-3">
+                <h3 class="card-header">Клео</h3>
+                <div class="card-body">
+                    <h5 class="card-title">Сомалийска котка</h5>
+                    <h6 class="card-subtitle text-muted">на 5 месеца</h6>
+                </div>
+                <img style="height: 200px; width: 100%; display: block;" src="../../../images/cats/somali-cat-cleo.jpg"
+                    alt="Card image">
+                <div class="card-body">
+                    <input type="checkbox" class="read-more-state" id="post-0" />
+                    <p class="read-more-wrap">
+                        Сред нашия богат асортимент на суха храна за кучета със
+                        сигурност ще намерите подходящата храна и за Вашия любимец.
+                        Съобразете я с индивидуалните потребности на кучето.
+                        <span class="read-more-target">Сухата храна предоставя важни за организма на кучета хранителни
+                            вещества и
+                            добавки и е неизменна част от
+                            менюто на
+                            кучетата .Тук ще намерите суха храна от всички най-известни производители, като Royal Canin,
+                            Eukanuba,
+                            Applaws,Proplan, Taste of
+                            the wild и много други марки храни на изгодни цени и на промоция.За запитване или
+                            поръчки,изберете линка
+                            под описанието.
+                        </span>
+                    </p>
+                    <label for="post-0" class="read-more-trigger"></label>
+                </div>
+                <div class="card-body">
+                    <button type="button" class="btn btn-warning">Попитай за мен!</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="card mb-3">
+                <h3 class="card-header">Сноубол</h3>
+                <div class="card-body">
+                    <h5 class="card-title">Ванска котка</h5>
+                    <h6 class="card-subtitle text-muted">на 1 година</h6>
+                </div>
+                <img style="height: 200px; width: 100%; display: block;" src="../../../images/cats/van-cat-snowball.jpg"
+                    alt="Card image">
+                <div class="card-body">
+                    <input type="checkbox" class="read-more-state" id="post-1" />
+                    <p class="read-more-wrap">
+                        Сред нашия богат асортимент на суха храна за кучета със
+                        сигурност ще намерите подходящата храна и за Вашия любимец.
+                        Съобразете я с индивидуалните потребности на кучето.
+                        <span class="read-more-target">Сухата храна предоставя важни за организма на кучета хранителни
+                            вещества и
+                            добавки и е неизменна част от
+                            менюто на
+                            кучетата .Тук ще намерите суха храна от всички най-известни производители, като Royal Canin,
+                            Eukanuba,
+                            Applaws,Proplan, Taste of
+                            the wild и много други марки храни на изгодни цени и на промоция.За запитване или
+                            поръчки,изберете линка
+                            под описанието.
+                        </span>
+                    </p>
+                    <label for="post-1" class="read-more-trigger"></label>
+                </div>
+                <div class="card-body">
+                    <button type="button" class="btn btn-warning">Попитай за мен!</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="card mb-3">
+                <h3 class="card-header">Мънки</h3>
+                <div class="card-body">
+                    <h5 class="card-title">Сиамска котка</h5>
+                    <h6 class="card-subtitle text-muted">на 8 месеца</h6>
+                </div>
+                <img style="height: 200px; width: 100%; display: block;"
+                    src="../../../images/cats/siamese-cat-Monkey.jpg" alt="Card image">
+                <div class="card-body">
+                    <input type="checkbox" class="read-more-state" id="post-2" />
+                    <p class="read-more-wrap">
+                        Сред нашия богат асортимент на суха храна за кучета със
+                        сигурност ще намерите подходящата храна и за Вашия любимец.
+                        Съобразете я с индивидуалните потребности на кучето.
+                        <span class="read-more-target">Сухата храна предоставя важни за организма на кучета хранителни
+                            вещества и
+                            добавки и е неизменна част от
+                            менюто на
+                            кучетата .Тук ще намерите суха храна от всички най-известни производители, като Royal Canin,
+                            Eukanuba,
+                            Applaws,Proplan, Taste of
+                            the wild и много други марки храни на изгодни цени и на промоция.За запитване или
+                            поръчки,изберете линка
+                            под описанието.
+                        </span>
+                    </p>
+                    <label for="post-2" class="read-more-trigger"></label>
+                </div>
+                <div class="card-body">
+                    <button type="button" class="btn btn-warning">Попитай за мен!</button>
+                </div>
             </div>
         </div>
     </div>
-    <ng-template #loading>Fetching data...</ng-template>
-</div>
-<!-- 
-<div *ngIf="pets$ | async as pets; else loading">
-    <div *ngFor="let pet of pets">
-        <h1>{{pet.name}}</h1>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card mb-3">
+                <h3 class="card-header">Чита</h3>
+                <div class="card-body">
+                    <h5 class="card-title">Бенгалска котка</h5>
+                    <h6 class="card-subtitle text-muted">на 1 месец</h6>
+                </div>
+                <img style="height: 200px; width: 100%; display: block;"
+                    src="../../../images/cats/bengal-cat-cheetah.jpg" alt="Card image">
+                <div class="card-body">
+                    <input type="checkbox" class="read-more-state" id="post-3" />
+                    <p class="read-more-wrap">
+                        Сред нашия богат асортимент на суха храна за кучета със
+                        сигурност ще намерите подходящата храна и за Вашия любимец.
+                        Съобразете я с индивидуалните потребности на кучето.
+                        <span class="read-more-target">Сухата храна предоставя важни за организма на кучета хранителни
+                            вещества и
+                            добавки и е неизменна част от
+                            менюто на
+                            кучетата .Тук ще намерите суха храна от всички най-известни производители, като Royal Canin,
+                            Eukanuba,
+                            Applaws,Proplan, Taste of
+                            the wild и много други марки храни на изгодни цени и на промоция.За запитване или
+                            поръчки,изберете линка
+                            под описанието.
+                        </span>
+                    </p>
+                    <label for="post-3" class="read-more-trigger"></label>
+                </div>
+                <div class="card-body">
+                    <button type="button" class="btn btn-warning">Попитай за мен!</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card mb-3">
+                <h3 class="card-header">Пух</h3>
+                <div class="card-body">
+                    <h5 class="card-title">Мейн куун</h5>
+                    <h6 class="card-subtitle text-muted">на 3 месеца</h6>
+                </div>
+                <img style="height: 200px; width: 100%; display: block;" src="../../../images/cats/maine-coon-puh.jpg"
+                    alt="Card image">
+                <div class="card-body">
+                    <input type="checkbox" class="read-more-state" id="post-4" />
+                    <p class="read-more-wrap">
+                        Сред нашия богат асортимент на суха храна за кучета със
+                        сигурност ще намерите подходящата храна и за Вашия любимец.
+                        Съобразете я с индивидуалните потребности на кучето.
+                        <span class="read-more-target">Сухата храна предоставя важни за организма на кучета хранителни
+                            вещества и
+                            добавки и е неизменна част от
+                            менюто на
+                            кучетата .Тук ще намерите суха храна от всички най-известни производители, като Royal Canin,
+                            Eukanuba,
+                            Applaws,Proplan, Taste of
+                            the wild и много други марки храни на изгодни цени и на промоция.За запитване или
+                            поръчки,изберете линка
+                            под описанието.
+                        </span>
+                    </p>
+                    <label for="post-4" class="read-more-trigger"></label>
+                </div>
+                <div class="card-body">
+                    <button type="button" class="btn btn-warning">Попитай за мен!</button>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-<ng-template #loading>Fetching</ng-template> -->

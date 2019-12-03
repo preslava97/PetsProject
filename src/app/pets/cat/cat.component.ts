@@ -1,7 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Observable } from 'rxjs';
-import { Pets } from 'src/app/services/pets.model';
-import { PetsService } from 'src/app/services/http-services/pets-service/pets.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cat',
@@ -9,15 +7,17 @@ import { PetsService } from 'src/app/services/http-services/pets-service/pets.se
   styleUrls: ['./cat.component.scss']
 })
 export class CatComponent implements OnInit, OnDestroy {
-  pets$: Observable<Pets[]>;
 
-  constructor(public petsService: PetsService) { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
-    this.pets$ = this.petsService.getPets();
   }
 
   ngOnDestroy(): void {
+  }
+
+  goBack(): void{
+    this.router.navigate(['pets']);
   }
 
 }

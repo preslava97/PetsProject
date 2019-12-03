@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDrawer } from '@angular/material/sidenav';
 import { Router } from '@angular/router';
-import {SlideshowModule} from 'ng-simple-slideshow';
+import { SlideshowModule } from 'ng-simple-slideshow';
 
 @Component({
   selector: 'app-homepage',
@@ -10,19 +10,35 @@ import {SlideshowModule} from 'ng-simple-slideshow';
 })
 export class HomepageComponent implements OnInit {
 
-  showFiller: boolean = false;
-  images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);
 
-  constructor(private router: Router) {   }
+  constructor(private router: Router) { }
 
-  ngOnInit() {}
+  ngOnInit() { }
 
-  openLogIn(): void {(this.router.navigate(['log']));
-  }
+  redirectTo(page: string): void {
+    switch (page) {
+      case "home": {
+        this.router.navigate(['home']);
+        break;
+      }
+      case "dog": {
+        this.router.navigate(['pets/dog']);
+        break;
+      }
+      case "dog": {
+        this.router.navigate(['pets']);
+        break;
+      }
+      case "parrot": {
+        this.router.navigate(['pets/parrot']);
+        break;
+      }
+      case "food":{
+        this.router.navigate(['catalogue/food']);
+      }
+    }
 
 
-  buttonClick() {
-    this.showFiller = !this.showFiller;
   }
 }
 
