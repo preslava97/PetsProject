@@ -6,11 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./food.component.scss']
 })
 export class FoodComponent implements OnInit {
-  showShortDesciption = true;
-
- alterDescriptionText() {
-    this.showShortDesciption = !this.showShortDesciption;
- }
+  
   constructor() { }
 
   ngOnInit() {
