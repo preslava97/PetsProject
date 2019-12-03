@@ -20,4 +20,8 @@ export class CatComponent implements OnInit, OnDestroy {
     this.router.navigate(['pets']);
   }
 
+  askAboutMe(): void{
+    this.router.navigate(['contacts']);
+  }
+
 }

@@ -17,4 +17,8 @@ export class DogComponent implements OnInit {
     this.router.navigate(['pets']);
   }
 
+  askAboutMe(): void{
+    this.router.navigate(['contacts']);
+  }
+
 }
