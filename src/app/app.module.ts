@@ -23,7 +23,7 @@ import { AccessoriesComponent } from './catalogue/accessories/accessories.compon
 import { HttpClientModule } from '@angular/common/http';
 import { PetsService } from './services/http-services/pets-service/pets.service';
 import { ContactsService } from './services/http-services/contact-service/contact.service';
-
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -50,7 +50,8 @@ import { ContactsService } from './services/http-services/contact-service/contac
     FormsModule,
     ReactiveFormsModule,
     SlideshowModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule
   ],
   exports: [
     MatSidenavModule
