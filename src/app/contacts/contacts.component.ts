@@ -47,18 +47,31 @@ export class ContactsComponent implements OnInit, OnDestroy {
       Validators.required
     ]);
 
-    let authorFormControl = this.formBuilder.control(null);
+    let authorFormControl = this.formBuilder.control(null,[
+      Validators.required
+    ]);
 
     let messageFormControl= this.formBuilder.control(null, [
-      Validators.required
+      //Validators.required
+    ]);
+
+    let emailFormControl= this.formBuilder.control(null, [
+      Validators.required,
+      Validators.email
+    ]);
+
+    let phoneFormControl= this.formBuilder.control(null, [
+      Validators.required,
+      
     ]);
 
     return this.formBuilder.group(
       {
         subject: subjectFormControl,
         message: messageFormControl,
-        author: authorFormControl
-       
+        author: authorFormControl,
+        email: emailFormControl,
+        phone: phoneFormControl
       }
     );
   }

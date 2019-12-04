@@ -21,11 +21,11 @@ export class HomepageComponent implements OnInit {
         this.router.navigate(['home']);
         break;
       }
-      case "dog": {
+      case "dogs": {
         this.router.navigate(['pets/dog']);
         break;
       }
-      case "dog": {
+      case "pets": {
         this.router.navigate(['pets']);
         break;
       }

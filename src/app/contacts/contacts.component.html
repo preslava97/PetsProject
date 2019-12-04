@@ -1,27 +1,68 @@
 <div class="container">
   <div class="row">
-      <div class="col">
-          <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Technical%20univercity&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com">how do you know your ip address</a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
+    <div class="col">
+      <div class="mapouter">
+        <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
+            src="https://maps.google.com/maps?q=Technical%20univercity&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+            href="https://www.whatismyip-address.com">how do you know your ip address</a></div>
+        <style>
+          .mapouter {
+            position: relative;
+            text-align: right;
+            height: 500px;
+            width: 600px;
+          }
+          .gmap_canvas {
+            overflow: hidden;
+            background: none !important;
+            height: 500px;
+            width: 600px;
+          }
+        </style>
       </div>
-      <div class="col">
-          <form >
-              <div class="form-group">
-                <label for="subject">Тема</label>
-                <input type="text" id="subject" class="form-control" >
-
-              </div>
-              <div class="form-group">
-                <label for="author">Автор</label>
-                <input type="text" class="form-control" id="author" >
-              </div>
-              <div class="form-group">
-                <label for="message">Съобщение</label>
-                <textarea class="form-control" id="message" rows="4" ></textarea>
-
-              </div>
-              <button type="button" class="btn btn-primary">Изпрати</button>
-          </form>
-      </div>
+    </div>
+    <div class="col">
+      <form [formGroup]="contactForm">
+        <div class="form-group">
+          <label for="subject">Тема</label>
+          <input type="text" id="subject" class="form-control" formControlName="subject">
+          <div class="form-group text-danger"
+            *ngIf="contactForm.get('subject').hasError('required') && contactForm.get('subject').touched">
+            Полето е задължително.
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="author">Автор</label>
+          <input type="text" class="form-control" id="author" formControlName="author">
+          <div class="form-group text-danger"
+            *ngIf="contactForm.get('author').hasError('required') && contactForm.get('author').touched">
+            Полето е задължително.
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" class="form-control" id="email" formControlName="email">
+          <div class="form-group text-danger"
+            *ngIf="contactForm.get('email').hasError('required') && contactForm.get('email').touched">
+            Полето е задължително.
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="phone">Телефон</label>
+          <input type="text" class="form-control" id="phone" formControlName="phone">
+          <div class="form-group text-danger"
+            *ngIf="contactForm.get('phone').hasError('required') && contactForm.get('phone').touched">
+            Полето е задължително.
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Съобщение</label>
+          <textarea class="form-control" id="message" rows="4" formControlName="message"></textarea>
+        </div>
+        <button type="button" class="btn btn-primary">Изпрати</button>
+      </form>
+    </div>
   </div>
   <div class="row"> Калоян Гочев </div>
   <div class="row"> Телефонен номер: 0895131748</div>
