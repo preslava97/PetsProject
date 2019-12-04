@@ -9,6 +9,9 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 })
 export class LogComponent implements OnInit {
   loginForm: FormGroup;
+  username: string;
+  password: string;
+
   constructor(private router: Router, private formBuilder: FormBuilder) { }
 
   ngOnInit(): void {
@@ -18,7 +21,12 @@ export class LogComponent implements OnInit {
 
   onSignInButtonClicked(): void {
     if(this.loginForm.valid) {
-
+      if(this.loginForm.value.username==="admin" && this.loginForm.value.password==="admin"){
+        alert("Успешно влизане");
+        this.router.navigate(['home']);
+      } else{
+        alert("Грешка при влизане");
+      }
     }
     else {
       this.loginForm.markAllAsTouched()
