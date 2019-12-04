@@ -1,5 +1,5 @@
 <div class="container">
-    <button type="button" class="btn btn-outline-success" (click)="goBack()">Назад</button>
+  <button type="button" class="btn btn-outline-success" (click)="goBack()">Назад</button>
 
   <div class="row">
     <div class="col-sm">
@@ -13,16 +13,16 @@
           alt="Card image">
         <div class="card-body">
           <input type="checkbox" class="read-more-state" id="post-0" />
-            <p class="read-more-wrap">Велурено зимно яке Adidas с качулка.
-              Налични са различни типове размери -S,M,L,XL.<span class="read-more-target">
+          <p class="read-more-wrap">Велурено зимно яке Adidas с качулка.
+            Налични са различни типове размери -S,M,L,XL.<span class="read-more-target">
               За запитване или поръчки,изберете линка под описанието.
             </span>
-            </p>
-            <label for="post-0" class="read-more-trigger"></label>
-              <p class="row"> Цена: 20 лв </p>
+          </p>
+          <label for="post-0" class="read-more-trigger"></label>
+          <p class="row"> Цена: 20 лв </p>
         </div>
         <div class="card-body">
-            <a class="btn" [routerLink]="['../', 'contacts']">Свържете се с нас</a>
+          <button type="button" class="btn btn-warning" (click)="askAboutMe()">Свържи се с нас</button>
         </div>
       </div>
     </div>
@@ -36,17 +36,17 @@
         <img style="height: 200px; width: 100%; display: block;" src="../../../images/house_dog_cat.jpg"
           alt="Card image">
         <div class="card-body">
-            <input type="checkbox" class="read-more-state" id="post-1" />
-            <p class="read-more-wrap">Меко и топло кръгло легло за кучета и котки.
-              Подходящо за кучета със средно телосложение.<span class="read-more-target">
+          <input type="checkbox" class="read-more-state" id="post-1" />
+          <p class="read-more-wrap">Меко и топло кръгло легло за кучета и котки.
+            Подходящо за кучета със средно телосложение.<span class="read-more-target">
               За запитване или поръчки,изберете линка под описанието.
             </span>
           </p>
           <label for="post-1" class="read-more-trigger"></label>
-              <p class="row"> Цена: 30 лв </p>
+          <p class="row"> Цена: 30 лв </p>
         </div>
         <div class="card-body">
-            <a class="btn" [routerLink]="['../','contacts']">Свържете се с нас</a>
+          <button type="button" class="btn btn-warning" (click)="askAboutMe()">Свържи се с нас</button>
         </div>
       </div>
     </div>
@@ -60,18 +60,18 @@
         <img style="height: 200px; width: 100%; display: block;"
           src="../../../images/DogLeadsAndCollars_1000x1000_1.jpg" alt="Card image">
         <div class="card-body">
-            <input type="checkbox" class="read-more-state" id="post-2" />
-            <p class="read-more-wrap">
-               Поводи и каишки в комплект или без , с удобни размери S,M,L,XL.
-                  <span class="read-more-target">
+          <input type="checkbox" class="read-more-state" id="post-2" />
+          <p class="read-more-wrap">
+            Поводи и каишки в комплект или без , с удобни размери S,M,L,XL.
+            <span class="read-more-target">
               За запитване или поръчки,изберете линка под описанието.
-                </span>
-              </p>
-            <label for="post-2" class="read-more-trigger"></label>
-              <p class="row"> Цена: По договаряне </p>
+            </span>
+          </p>
+          <label for="post-2" class="read-more-trigger"></label>
+          <p class="row"> Цена: По договаряне </p>
         </div>
         <div class="card-body">
-            <a class="btn" [routerLink]="['../','contacts']">Свържете се с нас</a>
+          <button type="button" class="btn btn-warning" (click)="askAboutMe()">Свържи се с нас</button>
         </div>
       </div>
     </div>
@@ -86,20 +86,21 @@
         </div>
         <img style="height: 200px; width: 100%; display: block;" src="../../../images/dog_toys.jpg" alt="Card image">
         <div class="card-body">
-            <input type="checkbox" class="read-more-state" id="post-3" />
-            <p class="read-more-wrap">
-              Различни видове играчки:Пищялки,Плуващи играчки,Топки, въжета и рингове,Играчки за интелект,Играчки за дъвчене
-              <span class="read-more-target">
+          <input type="checkbox" class="read-more-state" id="post-3" />
+          <p class="read-more-wrap">
+            Различни видове играчки:Пищялки,Плуващи играчки,Топки, въжета и рингове,Играчки за интелект,Играчки за
+            дъвчене
+            <span class="read-more-target">
               За запитване или поръчка,изберете линка под описанието.
             </span>
           </p>
           <label for="post-3" class="read-more-trigger"></label>
-            <p class="row"> Цена: 10 лв </p>
+          <p class="row"> Цена: 10 лв </p>
         </div>
-      <div class="card-body">
-          <a class="btn" [routerLink]="['../','contacts']">Свържете се с нас</a>
+        <div class="card-body">
+          <button type="button" class="btn btn-warning" (click)="askAboutMe()">Свържи се с нас</button>
         </div>
-        </div>
+      </div>
     </div>
     <div class="col-sm">
       <div class="card mb-3">
@@ -110,21 +111,21 @@
         </div>
         <img style="height: 200px; width: 100%; display: block;" src="../../../images/BirdToys.jpg" alt="Card image">
         <div class="card-body">
-            <input type="checkbox" class="read-more-state" id="post-4" />
-            <p class="read-more-wrap">
-              Различни видове играчки:
-              Въжета за катерене,Играчки за кълване,Люлки,Минерални камъни.
-              <span class="read-more-target">
+          <input type="checkbox" class="read-more-state" id="post-4" />
+          <p class="read-more-wrap">
+            Различни видове играчки:
+            Въжета за катерене,Играчки за кълване,Люлки,Минерални камъни.
+            <span class="read-more-target">
               За запитване или поръчка,изберете линка под описанието.
             </span>
           </p>
           <label for="post-4" class="read-more-trigger"></label>
-            <p class="row"> Цена: 8 лв </p>
+          <p class="row"> Цена: 8 лв </p>
         </div>
-      <div class="card-body">
-          <a class="btn" [routerLink]="['../','contacts']">Свържете се с нас</a>
+        <div class="card-body">
+          <button type="button" class="btn btn-warning" (click)="askAboutMe()">Свържи се с нас</button>
         </div>
-    </div>
+      </div>
     </div>
     <div class="col-sm">
       <div class="card mb-3">
@@ -136,20 +137,21 @@
         <img style="height: 200px; width: 100%; display: block;" src="../../../images/bird_vogualer.jpg"
           alt="Card image">
         <div class="card-body">
-            <input type="checkbox" class="read-more-state" id="post-5" />
-            <p class="read-more-wrap">
-              Кафезът за птици е домът на Вашето животно.Кафезите и принадлежностите за клетки трябва да са,<span class="read-more-target">съобразени със потребностите на птицата.
+          <input type="checkbox" class="read-more-state" id="post-5" />
+          <p class="read-more-wrap">
+            Кафезът за птици е домът на Вашето животно.Кафезите и принадлежностите за клетки трябва да са,<span
+              class="read-more-target">съобразени със потребностите на птицата.
               За запитване или поръчка,изберете линка под описанието.
             </span>
           </p>
           <label for="post-5" class="read-more-trigger"></label>
-            <p class="row"> Цена: 27 лв </p>
+          <p class="row"> Цена: 27 лв </p>
         </div>
-      <div class="card-body">
-          <a class="btn" [routerLink]="['../','contacts']">Свържете се с нас</a>
+        <div class="card-body">
+          <button type="button" class="btn btn-warning" (click)="askAboutMe()">Свържи се с нас</button>
         </div>
+      </div>
     </div>
-  </div>
   </div>
   <div class="row">
     <div class="col-sm">
@@ -162,21 +164,24 @@
         <img style="height: 200px; width: 100%; display: block;"
           src="../../../images/BirdAccessories_1000x1000px_01_1.jpg" alt="Card image">
         <div class="card-body">
-            <input type="checkbox" class="read-more-state" id="post-6" />
-            <p class="read-more-wrap">
-              Необорудваният кафез за птици представлява тъжна гледка! В природата птичките по цял ден се занимават с <span class="read-more-target">
-              разни клончета и други паднали клонаци, кълват дребни горски плодове, къпят се и си търсят подходящо за почивка място.
-               Затова и клетката би трябвало да е оборудвана с подходящите принадлежности, за да не скучаят Вашите любимци.
+          <input type="checkbox" class="read-more-state" id="post-6" />
+          <p class="read-more-wrap">
+            Необорудваният кафез за птици представлява тъжна гледка! В природата птичките по цял ден се занимават с
+            <span class="read-more-target">
+              разни клончета и други паднали клонаци, кълват дребни горски плодове, къпят се и си търсят подходящо за
+              почивка място.
+              Затова и клетката би трябвало да е оборудвана с подходящите принадлежности, за да не скучаят Вашите
+              любимци.
               За запитване или поръчка,изберете линка под описанието.
             </span>
           </p>
           <label for="post-6" class="read-more-trigger"></label>
-            <p class="row"> Цена: 7 лв </p>
+          <p class="row"> Цена: 7 лв </p>
         </div>
-      <div class="card-body">
-          <a class="btn" [routerLink]="['../','contacts']">Свържете се с нас</a>
+        <div class="card-body">
+          <button type="button" class="btn btn-warning" (click)="askAboutMe()">Свържи се с нас</button>
         </div>
-    </div>
+      </div>
     </div>
     <div class="col-sm">
       <div class="card mb-3">
@@ -188,21 +193,21 @@
         <img style="height: 200px; width: 100%; display: block;" src="../../../images/LitterAndCare_bird.jpg"
           alt="Card image">
         <div class="card-body">
-            <input type="checkbox" class="read-more-state" id="post-7" />
-            <p class="read-more-wrap">
-              Пясъкът и постелките служат не само за поддържане на хигиената в клетките за птици,
-              същевременно <span class="read-more-target"> със това те са и подходящо занимание за пернатите животинки.
+          <input type="checkbox" class="read-more-state" id="post-7" />
+          <p class="read-more-wrap">
+            Пясъкът и постелките служат не само за поддържане на хигиената в клетките за птици,
+            същевременно <span class="read-more-target"> със това те са и подходящо занимание за пернатите животинки.
               В постелките или в пясъка птиците могат да ровят, човъркат и да играят.
               За запитване или поръчка,изберете линка под описанието.
             </span>
           </p>
           <label for="post-7" class="read-more-trigger"></label>
-            <p class="row"> Цена: 5 лв </p>
+          <p class="row"> Цена: 5 лв </p>
         </div>
-      <div class="card-body">
-          <a class="btn" [routerLink]="['../','contacts']">Свържете се с нас</a>
+        <div class="card-body">
+          <button type="button" class="btn btn-warning" (click)="askAboutMe()">Свържи се с нас</button>
         </div>
-    </div>
+      </div>
     </div>
     <div class="col-sm">
       <div class="card mb-3">
@@ -214,10 +219,11 @@
         <img style="height: 200px; width: 100%; display: block;" src="../../../images/la_digue_beige_fk_wollweiss_.jpg"
           alt="Card image">
         <div class="card-body">
-            <input type="checkbox" class="read-more-state" id="post-8" />
-            <p class="read-more-wrap">
-              Дървото за драскане е идеално място за спане и игра за една котка. Драскалка за котки или катерушка за
-              котки, <span class="read-more-target">би позволила на Вашата котка да обтяга и движи всичките си мускули, особено важно за котки, които прекарват
+          <input type="checkbox" class="read-more-state" id="post-8" />
+          <p class="read-more-wrap">
+            Дървото за драскане е идеално място за спане и игра за една котка. Драскалка за котки или катерушка за
+            котки, <span class="read-more-target">би позволила на Вашата котка да обтяга и движи всичките си мускули,
+              особено важно за котки, които прекарват
               много време у дома.
               Тъй като всяка катерушка за котка предлага занимание на котката Ви,
               намалява вероятността тя да прави драскотини по мебелите.
@@ -225,13 +231,13 @@
             </span>
           </p>
           <label for="post-8" class="read-more-trigger"></label>
-            <p class="row"> Цена: 36 лв </p>
+          <p class="row"> Цена: 36 лв </p>
         </div>
-      <div class="card-body">
-          <a class="btn" [routerLink]="['../','contacts']">Свържете се с нас</a>
+        <div class="card-body">
+          <button type="button" class="btn btn-warning" (click)="askAboutMe()">Свържи се с нас</button>
         </div>
+      </div>
     </div>
-  </div>
   </div>
   <div class="row">
     <div class="col-sm">
@@ -244,10 +250,10 @@
         <img style="height: 200px; width: 100%; display: block;" src="../../../images/peshtera_za_kotki.jpg"
           alt="Card image">
         <div class="card-body">
-            <input type="checkbox" class="read-more-state" id="post-9" />
-            <p class="read-more-wrap">
-              Kотките прекарват по-голямата част ор времето си в отдих.
-              Сънят е потребност на всички животни: <span class="read-more-target">
+          <input type="checkbox" class="read-more-state" id="post-9" />
+          <p class="read-more-wrap">
+            Kотките прекарват по-голямата част ор времето си в отдих.
+            Сънят е потребност на всички животни: <span class="read-more-target">
               когато спят дълбоко, мозъкът отбработва съхранената сетивна информация и образува нови нервни връзки.
               Затова всеки дом с котка трябва да предлага достатъчно уединени кътчета за отдих и сън!
               Защото котките обичат уюта.
@@ -255,12 +261,12 @@
             </span>
           </p>
           <label for="post-9" class="read-more-trigger"></label>
-            <p class="row"> Цена: 30 лв </p>
+          <p class="row"> Цена: 30 лв </p>
         </div>
-      <div class="card-body">
-          <a class="btn" [routerLink]="['../','contacts']">Свържете се с нас</a>
+        <div class="card-body">
+          <button type="button" class="btn btn-warning" (click)="askAboutMe()">Свържи се с нас</button>
         </div>
-    </div>
+      </div>
     </div>
     <div class="col-sm">
       <div class="card mb-3">
@@ -272,20 +278,20 @@
         <img style="height: 200px; width: 100%; display: block;" src="../../../images/kenef_za_kotka.jpg"
           alt="Card image">
         <div class="card-body">
-            <input type="checkbox" class="read-more-state" id="post-10" />
-            <p class="read-more-wrap">
-              Oформената тоалетна за котки Nestor на Savic е оборудвана с дълбоко корито,което не
-              позволява <span class="read-more-target"> протичане на течности извън тоалетната.
+          <input type="checkbox" class="read-more-state" id="post-10" />
+          <p class="read-more-wrap">
+            Oформената тоалетна за котки Nestor на Savic е оборудвана с дълбоко корито,което не
+            позволява <span class="read-more-target"> протичане на течности извън тоалетната.
               За запитване или поръчка,изберете линка под описанието.
             </span>
-            </p>
-            <label for="post-10" class="read-more-trigger"></label>
-            <p class="row"> Цена: 31 лв </p>
+          </p>
+          <label for="post-10" class="read-more-trigger"></label>
+          <p class="row"> Цена: 31 лв </p>
         </div>
-      <div class="card-body">
-          <a class="btn" [routerLink]="['../','contacts']">Свържете се с нас</a>
+        <div class="card-body">
+          <button type="button" class="btn btn-warning" (click)="askAboutMe()">Свържи се с нас</button>
         </div>
-    </div>
+      </div>
     </div>
     <div class="col-sm">
       <div class="card mb-3">
@@ -297,19 +303,20 @@
         <img style="height: 200px; width: 100%; display: block;" src="../../../images/koteshki_tuneli.jpg"
           alt="Card image">
         <div class="card-body">
-            <input type="checkbox" class="read-more-state" id="post-11" />
-            <p class="read-more-wrap">
-              Играчките са задължителни за всеки,които има котка.Те разнообразяват живота на котките,<span class="read-more-target">
+          <input type="checkbox" class="read-more-state" id="post-11" />
+          <p class="read-more-wrap">
+            Играчките са задължителни за всеки,които има котка.Те разнообразяват живота на котките,<span
+              class="read-more-target">
               като тренират сетивата си.
               За запитване или поръчка,изберете линка под описанието.
             </span>
-            </p>
-            <label for="post-11" class="read-more-trigger"></label>
-            <p class="row"> Цена: 23 лв </p>
+          </p>
+          <label for="post-11" class="read-more-trigger"></label>
+          <p class="row"> Цена: 23 лв </p>
         </div>
-      <div class="card-body">
-          <a class="btn" [routerLink]="['../','contacts']">Свържете се с нас</a>
+        <div class="card-body">
+          <button type="button" class="btn btn-warning" (click)="askAboutMe()">Свържи се с нас</button>
         </div>
+      </div>
     </div>
   </div>
-</div>

@@ -16,6 +16,10 @@ export class FoodComponent implements OnInit {
       this.router.navigate(['catalogue']);
     }
 
+    askAboutMe(): void {
+      this.router.navigate(['contacts']);
+    }
+
   }
 
 

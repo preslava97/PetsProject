@@ -15,4 +15,8 @@ export class AccessoriesComponent implements OnInit {
   goBack(): void {
     this.router.navigate(['catalogue']);
   }
+  
+  askAboutMe(): void {
+    this.router.navigate(['contacts']);
+  }
 }
